@@ -1,4 +1,4 @@
-view: inc {
+view: increment {
   derived_table: {
     indexes: ["i"]
     interval_trigger: "1 hours"
