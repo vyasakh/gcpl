@@ -2,6 +2,7 @@ connection: "thelook"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/inc.view.lkml"
 
 datagroup: vysakh_inc_test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -24,7 +25,7 @@ explore: events {
     relationship: many_to_one
   }
 }
-
+explore: inc {}
 
 explore: flights {}
 
